@@ -1,0 +1,12 @@
+table.manji {
+  border-collapse: collapse;
+}
+
+table.manji td {
+  width: 40px;
+  height: 40px;
+}
+
+table.manji td.with-color {
+  background-color: crimson;
+}
