@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form action="https://www.w3schools.com/action_page.php" method="post">
+    
+    <label for="monsterName">Nombre</label>:<br>
+    <input type="text" name="monsterName" id="monsterName"><br>
+    
+    <label for="monsterPass">Código secreto</label>:<br>
+    <input type="password" name="monsterPass" id="monsterPass"><br>
+
+    <label for="monsterKindT">Tipo</label>:<br>
+    <input type="radio" name="monsterKind" id="monsterKindT" value="T">Tierra<br>
+    <input type="radio" name="monsterKind" id="monsterKindM" value="M">Mar<br>
+    <input type="radio" name="monsterKind" id="monsterKindA" value="A">Aire<br>
+
+    <h5>Ataques</h5>
+    <input type="checkbox" name="monsterAttackF" id="monsterAttackF" value="ok">
+    <label for="monsterAttackF">Fuego</label><br>
+
+    <input type="checkbox" name="monsterAttackW" id="monsterAttackW" value="ok">
+    <label for="monsterAttackW">Viento</label><br>
+
+    <input type="checkbox" name="monsterAttackL" id="monsterAttackL" value="ok">
+    <label for="monsterAttackL">Amor</label><br>
+
+    <label for="monsterCountry">País</label><br>
+    <select name="monsterCountry" id="monsterCountry">
+      <option value="">-- Seleccione país --</option>
+      <option value="es">Españistán</option>
+      <option value="us">Yankiland</option>
+      <option value="jp">Nijón</option>
+    </select><br>
+
+    <textarea name="monsterDescription" id="monsterDescription"></textarea>
+    <br>
+
+    <label for="monsterEmail">Correo</label><br>
+    <input type="email" name="monsterEmail" id="monsterEmail"><br>
+
+    <br>
+    <input type="submit" value="Crear nuevo monstruo">
+  </form>
+
+</body>
+</html>
