@@ -10,3 +10,34 @@ table.manji td {
 table.manji td.with-color {
   background-color: crimson;
 }
+
+
+
+
+
+
+/*
+selector {
+  propiedad: valor;
+  propiedad: valor;
+  propiedad: valor;
+  propiedad: valor;
+}
+*/
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li.reverse {
+  background-color: black;
+}
+
+nav ul li.reverse a {
+  color: white;
+}
+
+#special {
+  color: red;
+}
