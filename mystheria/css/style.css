@@ -1,3 +1,11 @@
+/*
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+*/
+
 table.manji {
   border-collapse: collapse;
 }
@@ -10,20 +18,6 @@ table.manji td {
 table.manji td.with-color {
   background-color: crimson;
 }
-
-
-
-
-
-
-/*
-selector {
-  propiedad: valor;
-  propiedad: valor;
-  propiedad: valor;
-  propiedad: valor;
-}
-*/
 
 nav ul li a {
   text-decoration: none;
@@ -40,4 +34,61 @@ nav ul li.reverse a {
 
 #special {
   color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header, footer {
+  background-color: brown;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+nav.main-menu a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 3%;
+  width: 26.9%;
+  display: inline-block;
+  text-align: center;
+}
+
+nav.main-menu a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+}
+
+.absolute {
+  position: absolute;
+  top: 180px;
+  left: 240px;
+  background-color: chartreuse;
+}
+
+.relative {
+  position: relative;
 }
