@@ -6,6 +6,33 @@
 }
 */
 
+@keyframes giroDeLaMuerte {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: translate(120px, 160px) rotateX(180deg);
+  }
+  50% {
+    transform: none;
+  }
+  85% {
+    transform: scale(4);
+  }
+  100% {
+    transform: translate(120px, 160px) rotateX(180deg) scale(1);
+  }
+}
+
+#hw {
+  animation: giroDeLaMuerte 2s infinite;
+  /* animation-play-state: paused; */
+}
+
+/* #hw:hover {
+  animation-play-state: running;
+} */
+
 /* ------------------- MANJI STYLES ------------------- */ 
 
 table.manji {
@@ -68,17 +95,19 @@ header h1 {
 }
 
 nav.mainMenu a {
-  background-color: black;
+  background-color: #000000;
   color: white;
   text-decoration: none;
   padding: 10px 3%;
   width: 26.9%;
   display: inline-block;
   text-align: center;
+  transition: background-color 20s, color 0.5s;
+  transition-timing-function: cubic-bezier(0.53, 0.41, 0.41, 0.65);
 }
 
 nav.mainMenu a:hover {
-  background-color: transparent;
+  background-color: white;
   color: black;
 }
 
@@ -86,6 +115,14 @@ nav.mainMenu a:hover {
   position: fixed;
   bottom: 20px;
   right: 5%;
+  background-color: saddlebrown;
+  padding: 10px;
+  transition: transform 1s, background-color 1s;
+  transform: translate(-120px,-160px) rotateX(180deg);
+}
+
+.backtotop:hover {
+  background-color: slateblue;
 }
 
 .relative {
@@ -139,3 +176,4 @@ nav.mainMenu a:hover {
   display: flex;
   opacity: 1;
 }
+
