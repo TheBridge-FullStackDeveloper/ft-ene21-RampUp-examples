@@ -1,0 +1,49 @@
+body {
+  background-color: royalblue;
+}
+
+article.post img,
+article.post video,
+article.post iframe {
+  width: 100%;
+}
+
+/* ------------ 360 o menos ------------ */
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sectionsContainer,
+.articlesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ... */
+
+/* De 361 a 960 */
+@media screen and (min-width: 361px) {
+  .wrapper {
+    width: 360px;
+  }
+
+  .sectionsContainer {
+    flex-direction: row;
+  }
+
+  section {
+    margin: 0 3%;
+  }
+}
+
+/* 961 o mas  */
+@media screen and (min-width: 961px) {
+  .wrapper {
+    width: 960px;
+  }
+
+  .articlesContainer {
+    flex-direction: row;
+  }
+}
